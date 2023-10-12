@@ -3,7 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MapsModule } from './maps/maps.module';
+
+import * as mapboxgl from 'mapbox-gl';
+
+(mapboxgl as any).accessToken =
+  'pk.eyJ1Ijoiam9zdWVwZXJjeSIsImEiOiJjbG5kZDRtd3UwM2VxMm5vOG1vcHR1ODcxIn0.8jqemvLFWQvbpVMjzyDwfQ';
+
 
 @NgModule({
   declarations: [
